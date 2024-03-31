@@ -12,8 +12,7 @@ body {
 }
 
 .paper-frame {
-    background-image: url("https://i.ibb.co/LPCKyZW/paper-background.jpg"); /* Background image for the frame */
-    background-size: cover;
+    background-color: #e75480;
     border: 10px solid #ddd; /* Border around the frame */
     border-radius: 10px;
     padding: 20px;
