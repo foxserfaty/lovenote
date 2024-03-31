@@ -18,18 +18,6 @@ body {
     padding: 20px;
     position: relative;
 }
-/* 
-.heart {
-    width: 100px;
-    height: 100px;
-    background-image: url('heart.png'); /* Replace 'heart.png' with your image path */
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    opacity: 0.1;
-} */
 
 h1 {
     text-align: center;
