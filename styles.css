@@ -19,7 +19,7 @@ body {
     padding: 20px;
     position: relative;
 }
-
+/* 
 .heart {
     width: 100px;
     height: 100px;
@@ -30,7 +30,7 @@ body {
     top: 10px;
     left: 10px;
     opacity: 0.1;
-}
+} */
 
 h1 {
     text-align: center;
