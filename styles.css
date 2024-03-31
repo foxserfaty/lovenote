@@ -12,7 +12,7 @@ body {
 }
 
 .paper-frame {
-    background-image: 'paper_background.jpg'; /* Background image for the frame */
+    background-image: url("paper_background.jpg"); /* Background image for the frame */
     background-size: cover;
     border: 10px solid #ddd; /* Border around the frame */
     border-radius: 10px;
