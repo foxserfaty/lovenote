@@ -3,42 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <audio autoplay loop controls crossorigin="anonymous">
-        <source src="https://drive.lienuc.com/uc?id=1c0-KXvhc90t0PCMHEr-XF1hOamke_BI0">
-    </audio>
     <title>To my Aelia</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Linking to an external CSS file -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="paper-frame">
-            <div class="heart"></div>
-            <h1>To my Aelia</h1>
-            <div class="love-letter">
-                <p>
-                    Dear Aelia,<br><br>
 
-                    As I sit down to write this note, my heart overflows with emotions that words alone struggle to capture. You are the essence of my joy, the melody to my soul's song, and the very reason my days are brighter.<br><br>
+    <audio id="bg-music" loop preload="auto">
+        <source src="taovanyfin.mp3" type="audio/mpeg">
+        <source src="https://drive.lienuc.com/uc?id=1c0-KXvhc90t0PCMHEr-XF1hOamke_BI0">
+    </audio>
 
-                    In the quiet moments of the day, your presence fills my thoughts, like a gentle breeze stirring the leaves of a tree. Your laughter is the sweetest melody, echoing in the chambers of my heart. And your smile? Oh, your smile lights up my world, banishing darkness with its radiant glow.<br><br>
+    <section class="hero" id="hero">
+        <div class="floating-polaroids" id="hero-polaroids"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">To my Aelia</h1>
+            <p class="hero-subtitle">Happy Birthday</p>
+            <button class="open-envelope-btn" id="open-envelope-btn">
+                <span class="envelope-icon">
+                    <svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="10" width="60" height="36" rx="4" fill="#fff0f3" stroke="#e8889b" stroke-width="2"/>
+                        <path d="M2 14 L32 34 L62 14" stroke="#e8889b" stroke-width="2" fill="none"/>
+                        <path d="M2 10 L32 30 L62 10 L58 10 L32 4 L6 10 Z" fill="#ffd1dc" stroke="#e8889b" stroke-width="2"/>
+                    </svg>
+                </span>
+                <span class="btn-text">Tap to open</span>
+            </button>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-                    Every glance exchanged, every touch shared, ignites a fire within me—a fire fueled by the depths of my love for you. With each beat of my heart, I am reminded of the profound connection we share, a bond forged in the fires of passion and strengthened by the trials we've faced together.<br><br>
-
-                    Thôi đùa đấy GPT viết sến bỏ mẹ :))) <br><br>
-
-                    Đây là thật nhé: chào Dương, aelia, bồ tao, mày, and a buncha ways I call you (nma nôm na ý là người tao yêu). Năm nay là sinh nhật đầu tiên của em mà anh được hóng ké, nói chung là cũng nhiều cảm xúc hay ho lắm :v từ vui, hào hứng đến cả lo lắng. Mình mới yêu nhau nhau có 5 tháng nhể, thế mà thề cảm giác như lâu laauuu lắm rồi, xong lại nghĩ vl anh bh mới được đi sinh nhật em lần đầu <br><br>
-
-                    Anh thật sự chưa bao giờ sến súa nổi, dù thi thoảng thấy hay vl cũng muốn thử chỉ là kbiet làm ntn thôi :v Nhưng mà biết là em thích thiệp viết tay, handmade dồ, mà a k khéo tay làm mấy cái đấy lắm, với cả tuần qua a bận lòi ** nên là anh cũng handmade cái này cho em, cũng viết tay (thra là handtyped). Không đẹp lắm nhỉ, nma a sẽ giữ nguyên trang này, năm sau a update tiếp hehe <br><br>
-
-                    Ê hơi xàm l rồi nhể chung quy lại là chúc mừng sinh nhật bồ tao, tao siêu yêu m kiểu vcl vcl t sẵn sàng dành mọi thứ t có cho m (trừ khi t bận học hoặc làm còn lại đi chơi thì t đi với m liền bú đẫm vl còn đc bao ăn). Anh yêu em siêu siêu nhiều, mong em luôn ở đây để hàng năm a chúc tiếp :))) đm kbiet nói gì thật sory yêu moah moah <br><br>
-
-                    Thế nhóe em iu, anh siu siu iu em moah moah, luôn yêu em moah hehe <br>
-                    Tony Buồi <br><br>
-
-                    p/s: xóa mấy cái bậy r mng mới đc xem nhé helo cả nhà
-                </p>
+    <section class="envelope-section" id="envelope-section">
+        <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="envelope-back"></div>
+                <div class="envelope-flap-wrapper" id="envelope-flap">
+                    <div class="envelope-flap-shape"></div>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-heart">💌</div>
             </div>
         </div>
+
+        <div class="letter-container" id="letter-container">
+            <div class="paper-frame">
+                <div class="letter-header">
+                    <div class="heart-deco"></div>
+                    <h2>To my Aelia</h2>
+                    <div class="heart-deco"></div>
+                </div>
+                <div class="love-letter">
+                    <p>
+                        CHÀO VỢ,<br><br>
+
+                        VỢ YÊU ANH ĐƯỢC 3 NĂM TUỔI RỒI! SẮP ĐI MẪU GIÁO RỒI! <br><br>
+
+                        ANH CẢM ƠN VỢ VÌ ĐÃ CHỌN ANH, ĐÃ Ở BÊN ANH, ĐÃ YÊU ANH, ĐÃ CHỊU ĐỰNG ANH, ĐÃ THƯƠNG ANH, ĐÃ HIỂU ANH, ĐÃ CHIA SẺ VỚI ANH, ĐÃ CÙNG ANH TRẢI QUA TẤT CẢ NHỮNG THĂNG TRẦM CỦA CUỘC SỐNG NÀY. ANH BIẾT RẰNG MÌNH KHÔNG HOÀN HẢO, NHƯNG VỢ LUÔN THẤY ANH LÀ NGƯỜI HOÀN HẢO NHẤT TRONG MẮT VỢ. ANH THẬT SỰ MAY MẮN KHI CÓ VỢ TRONG ĐỜI, VỢ LÀ NGƯỜI ĐẸP NHẤT, THÔNG MINH NHẤT, TỐT NHẤT, NGHĨA TÌNH NHẤT, VÀ ĐẶC BIỆT LÀ NGƯỜI YÊU ANH NHẤT TRONG CUỘC SỐNG NÀY. ANH THẬT SỰ CẢM KÍCH VÀ BIẾT ƠN VỢ RẤT NHIỀU!<br><br>
+
+                        MÃI YÊU NHAU VỢ NHỚ KEKEKEKE<br><br>
+
+                        YÊU VỢ mAOHAHSAMAOHAA NOM NOM NÁCH!<br><br>
+                        
+                        Ký tên, <br>
+                        Chồng con bò! <br><br>
+
+                        Note: Ê năm nay web xịn chưa kekekekeke lướt xuống ngắm ảnh đê!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="memories-section" id="memories-section">
+        <h2 class="collage-title">Our Memories 🐄</h2>
+        <div class="memories-layout">
+            <div class="masonry-column" id="collage-left"></div>
+            <div class="masonry-column" id="collage-right"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made with ❤️ for you kekekeke</p>
+    </footer>
+
+    <div class="music-player" id="music-player">
+        <button class="music-btn" id="music-btn" aria-label="Play music">
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,3 20,12 6,21"/></svg>
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+        </button>
+        <span class="music-label" id="music-label">Tap to play ♪</span>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
